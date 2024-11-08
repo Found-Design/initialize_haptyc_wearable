@@ -1,6 +1,6 @@
 #!/bin/bash
 pull_haptycs_gh() {
-  cd /home/pi/desktop/haptycs-ble/ && git pull
+  cd /home/pi/Desktop/haptycs-ble/ && git pull
 }
 
 wifi="$(ip a | grep wlp2s0 | grep inet | wc -l)"
@@ -12,5 +12,4 @@ wifi="$(ip a | grep wlp2s0 | grep inet | wc -l)"
                                         fi
 
 cd /home/pi/desktop/haptycs-ble && \
-. /home/pi/desktop/haptycs-ble/env/bin/activate && \
 python3 cputemp.py
