@@ -11,4 +11,4 @@ wifi="$(ip a | grep wlp2s0 | grep inet | wc -l)"
                                                 echo "睊 No wifi!, just running the service"
                                         fi
 
-/usr/bin/python3 /home/pi/desktop/haptycs-ble/cputemp.py
+/usr/bin/python3 /home/pi/Desktop/haptycs-ble/cputemp.py
