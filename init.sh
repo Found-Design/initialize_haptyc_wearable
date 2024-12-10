@@ -1,6 +1,8 @@
 #!/bin/bash
 pull_haptycs_gh() {
-  cd /home/pi/desktop/haptycs-ble/ && git -c credential.helper='!f() { echo "password=raspberry"; }; f' pull
+    eval $(ssh-agent)
+    ssh-add ~/.ssh/id_rsa
+    cd /home/pi/desktop/haptycs-ble/ && git -c credential.helper='!f() { echo "password=raspberry"; }; f' pull
 }
 
 echo 'Begin ping'
