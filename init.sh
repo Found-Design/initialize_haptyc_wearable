@@ -14,5 +14,6 @@ else
     echo "睊 No wifi!, just running the service"
 fi
 
-
-/usr/bin/python3 /home/pi/desktop/haptycs-ble/cputemp.py
+cd /home/pi/desktop/haptycs-ble && \
+. /home/pi/desktop/haptycs-ble/env/bin/activate && \
+python3 cputemp.py
