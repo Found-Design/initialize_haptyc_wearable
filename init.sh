@@ -1,6 +1,6 @@
 #!/bin/bash
 pull_haptycs_gh() {
-  cd /home/pi/Desktop/haptycs-ble/ && git -c credential.helper='!f() { echo "password=raspberry"; }; f' pull
+  cd /home/pi/desktop/haptycs-ble/ && git -c credential.helper='!f() { echo "password=raspberry"; }; f' pull
 }
 
 echo 'Begin ping'
@@ -15,4 +15,4 @@ else
 fi
 
 
-/usr/bin/python3 /home/pi/Desktop/haptycs-ble/cputemp.py
+/usr/bin/python3 /home/pi/desktop/haptycs-ble/cputemp.py
