@@ -1,7 +1,7 @@
 #!/bin/bash
 pull_haptycs_gh() {
     eval $(ssh-agent)
-    ssh-add ~/.ssh/id_rsa
+    ssh-add ~/.ssh/id_ed25519
     cd /home/pi/desktop/haptycs-ble/ && git -c credential.helper='!f() { echo "password=raspberry"; }; f' pull
 }
 
